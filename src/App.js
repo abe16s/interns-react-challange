@@ -43,7 +43,7 @@ function App() {
       <header className="text-3xl font-bold py-6 text-center">
         Star Wars Actors
       </header>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
+      <div className="flex flex-wrap justify-center gap-6 p-6">
         {actors.map((actor) => (
           <ActorCard key={actor.name} actor={actor} onSelectActor={handleSelectActor} />
         ))}
